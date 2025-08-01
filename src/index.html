@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>X Clone</title>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/b/b7/X_logo.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body class="bg-black text-white">
+    <div class="flex max-w-7xl mx-auto">
+        <div class="w-16 md:w-64 xl:w-80 h-screen sticky top-0">
+            <div class="flex flex-col h-full p-2 md:p-4">
+  
+                <div class="logo my-4 px-3">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 h-8 fill-white">
+                        <g>
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                        </g>
+                    </svg>
+                </div>
+
+                
+                <ul class="flex flex-col space-y-1 flex-1">
+                    <li class="flex items-center gap-4 hover:bg-gray-900 hover:cursor-pointer px-3 py-3 rounded-full transition-colors">
+                        <span class="text-3xl material-symbols-outlined">home</span>
+                        <span class="hidden md:block text-xl font-normal">Home</span>
+                    </li>
+                    <li class="flex items-center gap-4 hover:bg-gray-900 hover:cursor-pointer px-3 py-3 rounded-full transition-colors">
+                        <span class="text-3xl material-symbols-outlined">search</span>
+                        <span class="hidden md:block text-xl font-normal">Explore</span>
+                    </li>
+                    <li class="flex items-center gap-4 hover:bg-gray-900 hover:cursor-pointer px-3 py-3 rounded-full transition-colors">
+                        <span class="text-3xl material-symbols-outlined">notifications</span>
+                        <span class="hidden md:block text-xl font-normal">Notifications</span>
+                    </li>
+                    <li class="flex items-center gap-4 hover:bg-gray-900 hover:cursor-pointer px-3 py-3 rounded-full transition-colors">
+                        <span class="text-3xl material-symbols-outlined">message</span>
+                        <span class="hidden md:block text-xl font-normal">Messages</span>
+                    </li>
+                    <li class="flex items-center gap-4 hover:bg-gray-900 hover:cursor-pointer px-3 py-3 rounded-full transition-colors">
+                        <span class="text-3xl material-symbols-outlined">lists</span>
+                        <span class="hidden md:block text-xl font-normal">Lists</span>
+                    </li>
+                    <li class="flex items-center gap-4 hover:bg-gray-900 hover:cursor-pointer px-3 py-3 rounded-full transition-colors">
+                        <span class="text-3xl material-symbols-outlined">bookmarks</span>
+                        <span class="hidden md:block text-xl font-normal">Bookmarks</span>
+                    </li>
+                    <li class="flex items-center gap-4 hover:bg-gray-900 hover:cursor-pointer px-3 py-3 rounded-full transition-colors">
+                        <span class="text-3xl material-symbols-outlined">group</span>
+                        <span class="hidden md:block text-xl font-normal">Communities</span>
+                    </li>
+                    <li class="flex items-center gap-4 hover:bg-gray-900 hover:cursor-pointer px-3 py-3 rounded-full transition-colors">
+                        <span class="text-3xl material-symbols-outlined">workspace_premium</span>
+                        <span class="hidden md:block text-xl font-normal">Premium</span>
+                    </li>
+                    <li class="flex items-center gap-4 hover:bg-gray-900 hover:cursor-pointer px-3 py-3 rounded-full transition-colors">
+                        <span class="text-3xl material-symbols-outlined">person</span>
+                        <span class="hidden md:block text-xl font-normal">Profile</span>
+                    </li>
+                    <li class="flex items-center gap-4 hover:bg-gray-900 hover:cursor-pointer px-3 py-3 rounded-full transition-colors">
+                        <span class="text-3xl material-symbols-outlined">more_horiz</span>
+                        <span class="hidden md:block text-xl font-normal">More</span>
+                    </li>
+                </ul>
+
+                
+                <div class="my-4">
+                    <button class="hidden md:block bg-[#1d9bf0] w-full text-xl rounded-full py-3 text-white font-bold hover:bg-[#1a8cd8] transition-colors">Post</button>
+                    <button class="md:hidden bg-[#1d9bf0] w-12 h-12 text-xl rounded-full text-white hover:bg-[#1a8cd8] transition-colors flex items-center justify-center">
+                        <span class="material-symbols-outlined">edit</span>
+                    </button>
+                </div>
+
+                
+                <div class="hidden md:flex items-center gap-3 p-3 hover:bg-gray-900 cursor-pointer rounded-full transition-colors mt-auto">
+                    <img class="w-10 h-10 rounded-full" src="unnamed.png" alt="Profile">
+                    <div class="flex-1 hidden xl:block">
+                        <div class="font-bold text-sm">Aviral Tripathi</div>
+                        <div class="text-gray-500 text-sm">@avi911</div>
+                    </div>
+                    <div class="hidden xl:block">
+                        <span class="material-symbols-outlined">more_horiz</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="flex-1 border-x border-gray-800 min-h-screen max-w-2xl">
+            
+            <div class="sticky top-0 bg-black/80 backdrop-blur-md border-b border-gray-800 z-10">
+                <div class="flex">
+                    <div class="flex-1 text-center py-4 font-bold hover:bg-gray-900/50 cursor-pointer relative">
+                        For You
+                        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-[#1d9bf0] rounded-full"></div>
+                    </div>
+                    <div class="flex-1 text-center py-4 font-bold hover:bg-gray-900/50 cursor-pointer">
+                        Following
+                    </div>
+                    <div class="flex items-center justify-center w-12">
+                        <span class="material-symbols-outlined text-gray-500 hover:text-white cursor-pointer">settings</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="flex gap-3 p-4 border-b border-gray-800">
+                <img class="w-12 h-12 rounded-full" src="https://www.greaterauckland.org.nz/wp-content/uploads/2015/09/AT-Logo.png" alt="Profile">
+                <div class="flex-1">
+                    <textarea class="w-full bg-transparent text-xl placeholder-gray-500 resize-none outline-none" rows="2" placeholder="What is happening?!"></textarea>
+                    <div class="flex items-center gap-1 text-[#1d9bf0] my-3">
+                        <span class="material-symbols-outlined text-sm">public</span>
+                        <span class="text-sm font-bold">Everyone can reply</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-4">
+                        <div class="flex gap-4 text-[#1d9bf0]">
+                            <span class="material-symbols-outlined hover:bg-gray-900 p-2 rounded-full cursor-pointer transition-colors">image</span>
+                            <span class="material-symbols-outlined hover:bg-gray-900 p-2 rounded-full cursor-pointer transition-colors">gif_box</span>
+                            <span class="material-symbols-outlined hover:bg-gray-900 p-2 rounded-full cursor-pointer transition-colors">poll</span>
+                            <span class="material-symbols-outlined hover:bg-gray-900 p-2 rounded-full cursor-pointer transition-colors">mood</span>
+                            <span class="material-symbols-outlined hover:bg-gray-900 p-2 rounded-full cursor-pointer transition-colors">event</span>
+                            <span class="material-symbols-outlined hover:bg-gray-900 p-2 rounded-full cursor-pointer transition-colors">location_on</span>
+                        </div>
+                        <button class="bg-[#1d9bf0] px-6 py-1.5 rounded-full text-white font-bold hover:bg-[#1a8cd8] transition-colors disabled:opacity-50" disabled>Post</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="divide-y divide-gray-800">
+                
+                <div class="flex gap-3 p-4 hover:bg-gray-950/50 transition-colors">
+                    <img class="w-12 h-12 rounded-full" src="https://cdn.shopify.com/s/files/1/0765/3946/1913/files/lhasa_apo.jpg?v=1738013162" alt="Dog">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-1 mb-1">
+                            <span class="font-bold hover:underline cursor-pointer">Aviral</span>
+                            <span class="text-gray-500">@avi911 · 6h</span>
+                        </div>
+                        <div class="mb-3">
+                            Just had the best chhole bhature of my life.<br><br>
+                            Lassi was kind of mid though.<br><br>
+                            Gotta workout even more now.
+                        </div>
+                        <div class="flex justify-between max-w-md text-gray-500">
+                            <div class="flex items-center gap-2 hover:text-[#1d9bf0] cursor-pointer group">
+                                <div class="p-2 rounded-full group-hover:bg-[#1d9bf0]/10 transition-colors">
+                                    <span class="material-symbols-outlined text-lg">chat_bubble</span>
+                                </div>
+                                <span class="text-sm">942</span>
+                            </div>
+                            <div class="flex items-center gap-2 hover:text-green-500 cursor-pointer group">
+                                <div class="p-2 rounded-full group-hover:bg-green-500/10 transition-colors">
+                                    <span class="material-symbols-outlined text-lg">repeat</span>
+                                </div>
+                                <span class="text-sm">1k</span>
+                            </div>
+                            <div class="flex items-center gap-2 hover:text-pink-500 cursor-pointer group">
+                                <div class="p-2 rounded-full group-hover:bg-pink-500/10 transition-colors">
+                                    <span class="material-symbols-outlined text-lg">favorite</span>
+                                </div>
+                                <span class="text-sm">4k</span>
+                            </div>
+                            <div class="flex items-center gap-2 hover:text-[#1d9bf0] cursor-pointer group">
+                                <div class="p-2 rounded-full group-hover:bg-[#1d9bf0]/10 transition-colors">
+                                    <span class="material-symbols-outlined text-lg">bar_chart</span>
+                                </div>
+                                <span class="text-sm">12k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="flex gap-3 p-4 hover:bg-gray-950/50 transition-colors">
+                    <img class="w-12 h-12 rounded-full" src="https://t4.ftcdn.net/jpg/04/06/91/91/360_F_406919161_J0pGxe1sewqnk5dnvyRS77MKmEd6SVac.jpg" alt="Voldie">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-1 mb-1">
+                            <span class="font-bold hover:underline cursor-pointer">Voldemort</span>
+                            <span class="text-gray-500">@NoNose4lyf · 10h</span>
+                        </div>
+                        <div class="mb-3">Hello World</div>
+                        <div class="mb-3">
+                            <img class="rounded-2xl max-w-full" src="https://indianmemetemplates.com/wp-content/uploads/salman-khan-driving-in-tiger-zinda-hai.jpg" alt="Post image">
+                        </div>
+                        <div class="flex justify-between max-w-md text-gray-500">
+                            <div class="flex items-center gap-2 hover:text-[#1d9bf0] cursor-pointer group">
+                                <div class="p-2 rounded-full group-hover:bg-[#1d9bf0]/10 transition-colors">
+                                    <span class="material-symbols-outlined text-lg">chat_bubble</span>
+                                </div>
+                                <span class="text-sm">1k</span>
+                            </div>
+                            <div class="flex items-center gap-2 hover:text-green-500 cursor-pointer group">
+                                <div class="p-2 rounded-full group-hover:bg-green-500/10 transition-colors">
+                                    <span class="material-symbols-outlined text-lg">repeat</span>
+                                </div>
+                                <span class="text-sm">290</span>
+                            </div>
+                            <div class="flex items-center gap-2 hover:text-pink-500 cursor-pointer group">
+                                <div class="p-2 rounded-full group-hover:bg-pink-500/10 transition-colors">
+                                    <span class="material-symbols-outlined text-lg">favorite</span>
+                                </div>
+                                <span class="text-sm">2k</span>
+                            </div>
+                            <div class="flex items-center gap-2 hover:text-[#1d9bf0] cursor-pointer group">
+                                <div class="p-2 rounded-full group-hover:bg-[#1d9bf0]/10 transition-colors">
+                                    <span class="material-symbols-outlined text-lg">bar_chart</span>
+                                </div>
+                                <span class="text-sm">12k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="flex gap-3 p-4 hover:bg-gray-950/50 transition-colors">
+                    <img class="w-12 h-12 rounded-full" src="https://i.pinimg.com/474x/51/31/29/51312900af793b8e1be37529a13f43f6.jpg" alt="try">
+                    <div class="flex-1">
+                        <div class="flex items-center gap-1 mb-1">
+                            <span class="font-bold hover:underline cursor-pointer">Test Text</span>
+                            <span class="text-gray-500">@12345 · 2h</span>
+                        </div>
+                        <div class="mb-3">Lorem ipsum dolor sit</div>
+                        <div class="mb-3">
+                            <img class="rounded-2xl max-w-full" src="https://static.toiimg.com/photo/msid-113370310,width-96,height-65.cms" alt="alec">
+                        </div>
+                        <div class="flex justify-between max-w-md text-gray-500">
+                            <div class="flex items-center gap-2 hover:text-[#1d9bf0] cursor-pointer group">
+                                <div class="p-2 rounded-full group-hover:bg-[#1d9bf0]/10 transition-colors">
+                                    <span class="material-symbols-outlined text-lg">chat_bubble</span>
+                                </div>
+                                <span class="text-sm">200</span>
+                            </div>
+                            <div class="flex items-center gap-2 hover:text-green-500 cursor-pointer group">
+                                <div class="p-2 rounded-full group-hover:bg-green-500/10 transition-colors">
+                                    <span class="material-symbols-outlined text-lg">repeat</span>
+                                </div>
+                                <span class="text-sm">3k</span>
+                            </div>
+                            <div class="flex items-center gap-2 hover:text-pink-500 cursor-pointer group">
+                                <div class="p-2 rounded-full group-hover:bg-pink-500/10 transition-colors">
+                                    <span class="material-symbols-outlined text-lg">favorite</span>
+                                </div>
+                                <span class="text-sm">687</span>
+                            </div>
+                            <div class="flex items-center gap-2 hover:text-[#1d9bf0] cursor-pointer group">
+                                <div class="p-2 rounded-full group-hover:bg-[#1d9bf0]/10 transition-colors">
+                                    <span class="material-symbols-outlined text-lg">bar_chart</span>
+                                </div>
+                                <span class="text-sm">8k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="hidden lg:block w-80 h-screen sticky top-0 p-4">
+            
+            <div class="mb-4">
+                <div class="relative">
+                    <span class="material-symbols-outlined absolute left-3 top-3 text-gray-500">search</span>
+                    <input type="text" class="w-full bg-[#16181c] text-white pl-12 pr-4 py-3 rounded-full outline-none focus:ring-2 focus:ring-[#1d9bf0] placeholder-gray-500" placeholder="Search">
+                </div>
+            </div>
+
+            
+            <div class="bg-[#16181c] rounded-2xl overflow-hidden mb-4">
+                <h2 class="text-xl font-bold p-4">What's happening</h2>
+                <div class="hover:bg-gray-800/50 cursor-pointer transition-colors p-4">
+                    <div class="text-sm text-gray-400">Trending Worldwide</div>
+                    <div class="font-bold">#CJ</div>
+                    <div class="text-sm text-gray-400">3.2K posts</div>
+                </div>
+                <div class="hover:bg-gray-800/50 cursor-pointer transition-colors p-4">
+                    <div class="text-sm text-gray-400">Trending in India</div>
+                    <div class="font-bold">#Shinchan</div>
+                    <div class="text-sm text-gray-400">1.4K posts</div>
+                </div>
+        
+            
+            <div class="bg-[#16181c] rounded-2xl overflow-hidden mb-4">
+                <h2 class="text-xl font-bold p-4">Who to follow</h2>
+                <div class="hover:bg-gray-800/50 cursor-pointer transition-colors p-4">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <img class="w-10 h-10 rounded-full" src="https://cdn-icons-png.flaticon.com/256/25/25231.png" alt="Github">
+                            <div>
+                                <div class="font-bold">Github</div>
+                                <div class="text-gray-500 text-sm">@Github</div>
+                            </div>
+                        </div>
+                        <button class="bg-white text-black px-4 py-1.5 rounded-full font-bold hover:bg-gray-200 transition-colors">Follow</button>
+                    </div>
+                </div>
+                <div class="hover:bg-gray-800/50 cursor-pointer transition-colors p-4">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <img class="w-10 h-10 rounded-full" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/SBI-logo.svg/500px-SBI-logo.svg.png?20200329171950" alt="SBI">
+                            <div>
+                                <div class="font-bold">SBI</div>
+                                <div class="text-gray-500 text-sm">@lunchbreak</div>
+                            </div>
+                        </div>
+                        <button class="bg-white text-black px-4 py-1.5 rounded-full font-bold hover:bg-gray-200 transition-colors">Follow</button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <span class="text-[#1d9bf0] hover:underline cursor-pointer">Show more</span>
+                </div>
+            </div>
+
+            
+            <div class="text-xs text-gray-500 space-x-2 px-4">
+                <a href="#" class="hover:underline">Terms of Service</a>
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Cookie Policy</a>
+                <a href="#" class="hover:underline">Accessibility</a>
+                <a href="#" class="hover:underline">Ads info</a>
+                <a href="#" class="hover:underline">More</a>
+                <div class="mt-2">© 2025 X Corp.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
